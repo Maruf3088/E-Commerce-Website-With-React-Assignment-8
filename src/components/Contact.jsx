@@ -2,8 +2,8 @@ import contactImg from "../assets/contact.png"
 
 const Contact = () => {
   return (
-    <div className="2xl:container 2xl:mx-auto">
-      <div className={`mx-0 bg-[#9538E2] py-5 relative flex flex-col gap-5`}>
+    <div className="2xl:container 2xl:mx-auto mt-28">
+      <div className={`mx-0 bg-[#9538E2] py-10 relative flex flex-col gap-5`}>
         <h1 className="text-5xl mb-2 text-center font-bold text-white">
           Contact
         </h1>

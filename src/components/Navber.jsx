@@ -17,11 +17,11 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${isDashboard() ? "bg-[#F7F7F7] " : ""} 
-                  ${isHome() ? "bg-[#9538E2] md:mx-9" : ""} 
-                  md:mt-9 md:rounded-tr-2xl md:rounded-tl-2xl relative 
-                  2xl:container 2xl:mx-auto
-                  ${isCategory() ? "bg-[#9538E2] md:mx-9" : ""}`}
+      className={`${isDashboard() ? "bg-[#F7F7F7]  fixed w-[100%] md:pt-9 left-1/2 -translate-x-1/2 top-0  z-50" : "md:rounded-tl-2xl md:rounded-tr-2xl md:mx-9 md:mt-9"} 
+                  ${isHome() ? "bg-[#9538E2] " : ""} 
+                  
+                  2xl:container 2xl:mx-auto 
+                  ${isCategory() ? "bg-[#9538E2] " : ""}`}
     >
       <div className="navbar container mx-auto py-5">
         <div className="navbar-start">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
 
          
-          <Link to="/" className={`${isDashboard() ? "text-black" : "text-white"} font-bold text-xl`}>
+          <Link to="/" className={`${isDashboard() ? "text-black" : "text-white"} font-bold  text-lg md:text-xl`}>
             Gadget Heaven
           </Link>
         </div>

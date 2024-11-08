@@ -373,7 +373,7 @@ const Statistics = () => {
       <div
         className={`${
           isDashboard() ? "mx-0 " : "mx-9"
-        } bg-[#9538E2] py-5 relative flex flex-col gap-5 2xl:container 2xl:mx-auto`}
+        } bg-[#9538E2] mt-28 py-10 relative flex flex-col gap-5 2xl:container 2xl:mx-auto`}
       >
         <h1 className="text-5xl mb-2 text-center font-bold text-white">Statistics</h1>
         <p className="text-white text-center">

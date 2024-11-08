@@ -16,7 +16,7 @@ const Dashboard = () => {
       <div
         className={` ${
           !isDashboard() ? "mx-9" : "mx-0 "
-        } bg-[#9538E2]  py-8  relative flex flex-col gap-5 2xl:container 2xl:mx-auto`}
+        } bg-[#9538E2] mt-28  py-8  relative flex flex-col gap-5 2xl:container 2xl:mx-auto `}
       >
         <h1 className="text-5xl mb-2 text-center font-bold text-white">
           Dashboard

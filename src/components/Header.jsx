@@ -3,7 +3,7 @@ import bannerImg from "../assets/banner.jpg";
 const Header = () => {
   
   return (
-    <div className={`bg-[#9538E2] md:pb-44 relative md:rounded-br-2xl md:mx-9 md:rounded-bl-2xl 2xl:container 2xl:mx-auto`}>
+    <div className={`bg-[#9538E2] md:pb-44 relative md:rounded-br-2xl md:mx-9 md:rounded-bl-2xl 2xl:container 2xl:mx-auto `}>
       <div className="text-center text-white py-5 space-y-5 ">
         <h1 className="text-2xl  md:text-3xl font-bold">
           Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories

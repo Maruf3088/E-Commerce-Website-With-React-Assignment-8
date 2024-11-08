@@ -1,5 +1,6 @@
 import { useLoaderData, useLocation, useParams } from "react-router-dom";
 import { addToCart, addToWishlist } from "../utils";
+import { useEffect } from "react";
 
 const ProductDetails = () => {
   const { pathname } = useLocation();
@@ -20,12 +21,18 @@ const ProductDetails = () => {
   const handleAddToWishlist = (product) => {
     addToWishlist(product);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  
   return (
     <div className="2xl:container 2xl:mx-auto">
       <div
         className={` ${
           isDashboard() ? "mx-0 " : "mx-9"
-        } bg-[#9538E2] pt-12 md:pt-10 pb-12 md:pb-48 md:mb-[500px]  relative`}
+        } bg-[#9538E2] pt-12 md:pt-10 pb-12 md:pb-48 md:mb-[500px] mt-24  relative`}
       >
         <h1 className="text-3xl text-center font-bold text-white">
           Product Details
