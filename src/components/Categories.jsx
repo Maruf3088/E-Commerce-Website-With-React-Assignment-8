@@ -7,7 +7,7 @@ const Categories = ({ categories }) => {
   const isAllProduct =()=>pathname==="/"
   
   return (
-    <div className="flex flex-col gap-5 bg-white p-5 rounded-2xl">
+    <div className="grid grid-cols-2 gap-5 md:grid-cols-1 bg-white p-5 rounded-2xl">
       {categories.map((category) => (
         <NavLink
           key={category.category}

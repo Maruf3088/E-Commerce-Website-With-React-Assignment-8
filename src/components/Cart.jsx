@@ -50,9 +50,9 @@ const Cart = () => {
 
   return (
     <div className="container mx-auto">
-      <div className="flex items-center justify-between py-6">
+      <div className="flex flex-col md:flex-row gap-5 md:gap-0 items-center justify-between py-6">
         <h1 className="text-3xl font-bold">Cart : {cartProduct.length}</h1>
-        <div className="flex gap-5 items-center">
+        <div className="flex flex-col md:flex-row gap-5 items-center">
           <p className="font-bold text-2xl">Total Price : ${totalPrice}</p>
           <button
             onClick={handleSortBtn}
@@ -68,7 +68,7 @@ const Cart = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col gap-5 min-h-screen py-5">
+      <div className="flex flex-col gap-5 min-h-screen p-4 md:p-0 py-5">
         {cartProduct.map((product) => (
           <CartSingleProduct
             handleRemoveFromCart={handleRemoveFromCart}

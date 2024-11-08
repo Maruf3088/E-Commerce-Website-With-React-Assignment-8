@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Product = ({ product }) => {
   return (
     <Link to={`/product/${product.product_id}`}>
-      <div className=" bg-base-100 h-[460px] shadow-xl card">
-        <figure className="p-12">
+      <div className=" bg-base-100 md:h-[460px] shadow-xl card">
+        <figure className="md:p-12">
           <img
             src={product.product_image}
             alt="Shoes"

@@ -15,7 +15,6 @@ const ProductDetails = () => {
 
   const handleAddToCart = (product) => {
     addToCart(product);
-    
   };
 
   const handleAddToWishlist = (product) => {
@@ -23,25 +22,29 @@ const ProductDetails = () => {
   };
   return (
     <div className="2xl:container 2xl:mx-auto">
-      <div className={` ${isDashboard()? "mx-0 " : "mx-9"} bg-[#9538E2]  pt-10 pb-48 mb-[500px]  relative`}>
+      <div
+        className={` ${
+          isDashboard() ? "mx-0 " : "mx-9"
+        } bg-[#9538E2] pt-12 md:pt-10 pb-12 md:pb-48 md:mb-[500px]  relative`}
+      >
         <h1 className="text-3xl text-center font-bold text-white">
           Product Details
         </h1>
-        <p className="text-white text-center">
+        <p className="text-white text-center pb-7">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices <br /> to the coolest accessories, we have
           it all!
         </p>
 
-        <div className=" p-5 border-2 shadow-xl h-[520px] w-[70%] mx-auto bg-white rounded-3xl flex gap-5 absolute top-1/2 left-[16%]">
-          <div className="w-1/2 ">
+        <div className=" p-5 border-2 shadow-xl md:h-[520px] md:w-[70%] mx-auto bg-white md:rounded-3xl flex flex-col md:flex-row gap-5 md:absolute top-1/2 left-[16%]">
+          <div className="md:w-1/2 ">
             <img
               src={singleProduct.product_image}
               alt=""
               className="w-full h-full object-cover rounded-3xl"
             />
           </div>
-          <div className="w-1/2 space-y-5 ">
+          <div className="md:w-1/2 space-y-5 ">
             <h1 className="text-3xl font-bold">
               {singleProduct.product_title}
             </h1>

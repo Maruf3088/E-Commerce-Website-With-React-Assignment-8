@@ -17,11 +17,11 @@ const Wishlist = () => {
 
   return (
     <div>
-      <div className="container mx-auto py-5">
-        <h1 className="font-bold text-2xl">WishList</h1>
+      <div className="container mx-auto py-8">
+        <h1 className="font-bold text-2xl text-center md:text-left">WishList</h1>
       </div>
 
-      <div className="container mx-auto py-5 min-h-screen flex flex-col gap-5">
+      <div className="container mx-auto px-2 md:px-0 md:py-5 min-h-screen flex flex-col gap-5">
         {wishlist.map((product) => (
           <WishlistSingleProduct key={product.product_id} handleRemoveFromWishlist={handleRemoveFromWishlist} product={product} />
         ))}

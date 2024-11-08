@@ -18,10 +18,10 @@ const Navbar = () => {
   return (
     <div
       className={`${isDashboard() ? "bg-[#F7F7F7] " : ""} 
-                  ${isHome() ? "bg-[#9538E2] mx-9" : ""} 
-                  mt-9 rounded-tr-2xl rounded-tl-2xl relative 
+                  ${isHome() ? "bg-[#9538E2] md:mx-9" : ""} 
+                  md:mt-9 md:rounded-tr-2xl md:rounded-tl-2xl relative 
                   2xl:container 2xl:mx-auto
-                  ${isCategory() ? "bg-[#9538E2] mx-9" : ""}`}
+                  ${isCategory() ? "bg-[#9538E2] md:mx-9" : ""}`}
     >
       <div className="navbar container mx-auto py-5">
         <div className="navbar-start">
@@ -30,7 +30,10 @@ const Navbar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className={`h-7 w-7 ${isDashboard() ? "text-black" : "text-white"}`} 
+               
+                
+               
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

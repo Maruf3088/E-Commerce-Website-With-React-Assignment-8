@@ -13,9 +13,9 @@ const Contact = () => {
           it all!
         </p>
       </div>
-      <div className="flex items-center justify-center  py-10 px-4">
-        <div className="w-1/2">
-          <img className="w-[75%]" src={contactImg} alt="" />
+      <div className="flex flex-col md:flex-row items-center justify-center  py-10 px-4">
+        <div className="md:w-1/2">
+          <img className="w-full md:w-[75%]" src={contactImg} alt="" />
         </div>
         <div className="w-full max-w-lg bg-gray-100 rounded-lg shadow-md p-8">
           <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">

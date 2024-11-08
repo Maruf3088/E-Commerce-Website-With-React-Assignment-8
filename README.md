@@ -31,7 +31,7 @@ GadgetHeaven is an e-commerce platform dedicated to gadget enthusiasts. This pla
 
 ## Live Demo
 
-[View Live Website](https://gadget-heaven-webapp.netlify.app/)
+[View Live Website](https://gadget-heaven-web23.netlify.app/)
 
 ## Figma Design & Requirements Document
 

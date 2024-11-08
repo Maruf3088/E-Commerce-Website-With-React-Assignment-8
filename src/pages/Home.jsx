@@ -12,15 +12,15 @@ const Home = () => {
       </Helmet>
       <Header></Header>
       <div className="bg-[#F7F7F7]  min-h-screen">
-        <div className="pt-[350px] container mx-auto ">
-          <h1 className="text-3xl font-bold text-center py-5">
+        <div className="md:pt-[350px] container mx-auto ">
+          <h1 className=" text-2xl md:text-3xl py-10  font-bold text-center md:py-5">
             Explore Cutting-Edge Gadgets
           </h1>
-          <div className="flex  gap-10 py-5">
-            <div className="w-[20%] ">
+          <div className="flex flex-col md:flex-row gap-10 pb-5">
+            <div className="md:w-[20%] ">
               <Categories categories={categories}></Categories>
             </div>
-            <div className="w-[80%]">
+            <div className="w-[90%] mx-auto md:mx-0 md:w-[80%]">
               <Outlet></Outlet>
             </div>
           </div>
